@@ -1,0 +1,39 @@
+The Client–Server Model
+I am the client, think internet is just a restaurant, if i ask a question. The other computer that answers me is the server
+
+What happens when I enter a URL?
+Domain name is looked up (example: google.com) 
+DNS server replies with IP address
+↓
+My computer calls that IP, at port 443
+↓
+they meet and perform a digital handshake (TCP handshake)
+↓
+HTTP - my computer requests a file, basically says “hello, give me this”
+↓
+Server replies “sure, here you go”
+↓
+Rendering in browser
+browser takes the file code, threads work on it, page is rendered on my end
+
+Note 1 :
+Why ports matter?
+If we used the same port for everything, computer wouldn’t know
+which incoming data does what
+it would also get overloaded
+(bandwidth issue)
+
+Note 2 :
+DNS (Domain Name System)
+DNS is important
+It’s the system that tells
+the IP address of a computer
+
+Basically a name → number translator
+
+
+HTTP vs HTTPS
+
+HTTP - {Unprotected} Anyone can see, what you’re doing
+
+HTTPS - {Protected} This is locked, Uses SSL / TLS encryption, Only you and the server, have the key
