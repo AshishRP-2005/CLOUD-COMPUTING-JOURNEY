@@ -1,0 +1,41 @@
+Performance & Scalability
+
+Bandwidth - wideness of the pipe
+think of it as a highway
+6 lanes = more data passed at one time
+great while downloading large files
+
+Latency - speed limit of the internet
+even with great bandwidth
+if speed of data transfer is low
+UX seems laggy because of wait time
+
+CDN (Content Delivery Networks)
+see, data needs to travel
+from point A → B
+over a large distance through cables & wires
+this takes time, time which causes latency
+→ Solution: CDN
+
+instead of sending data only, from point A
+we place multiple points
+C, D, E, F… along the path
+the nearest point to B
+sends the data instead of A
+
+Note 1 :
+Zombie Server Problem
+server is UP, but not loading,is it a website issue or just timing out?
+
+Reasons
+CPU & RAM exhaustion
+Connection limit - {there are only a set number of open ports at a time}
+
+Too long of a line to go in a queue
+→ so a 30 sec delay
+
+Note 2 :
+If RAM is full
+OS moves things to disk
+disk is very slow
+this back and forth between ram and disk is called thrashing
