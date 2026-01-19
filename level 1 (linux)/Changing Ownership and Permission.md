@@ -5,8 +5,8 @@ Owner can change the permission of the file or directory
 ### Changing Ownership of file
  - better to understand with an example
  - ## Example
-   - `-rw-r--r-x 2 Ashish User 23 Jan 14:11 Example.txt` - here the owners are Ashish{user}  and User{group}
-   - `sudo chown Poojitha:root Example.txt` - now we changed the user to Poojitha and group to root
+   - `-rw-r--r-x 2 Ashish User 23 Jan 14:11 Example.txt` - here the owners are Ashish{owner}  and User{group}
+   - `sudo chown Poojitha:root Example.txt` - now we changed the owner/user to Poojitha and group to root
    - `-rw-r--r-x 2 Poojitha root 23 Jan 14:11 Example.txt` - when `ls -l Example.txt` is used this will be the output
 
 ### Changing Ownership of directory
@@ -32,4 +32,12 @@ Note 2 - `-p` flag used with `mkdir` allows for creation of sub-directories at t
     - `sudo chmod 754 directory` - changes only directory permission to `drwxr-xr--`
     - `sudo chamod -R 745 directory` - changes the directory and its contents permission to `drwxr--r-x`
 -  ## Symbolic method
-    - ``
+    - we use symbols that represent the owner, or group or everyone else along with symbols of r,w,x to change permissions
+    - SYMBOLS
+      - `u` - owner/user
+      - `g` - group
+      - `o` - everyone else/others
+      - `a` - all
+    - COMMAND
+      - `sudo chmod u+x script.sh` - gives the owner/user execute access for the shell script
+      - `sudo chmod o+r-w directory` - gives read access and removes write access to the directory{only directory and not its content} for everyone else 
