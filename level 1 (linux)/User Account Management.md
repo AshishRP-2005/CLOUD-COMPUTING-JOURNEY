@@ -17,4 +17,12 @@
      - /home/directory = home directory
      - bin/sh = default shell
 ## Verify Home Directory
-- 
+- `sudo ls -l /home/batman` 
+- Output
+   - `drwxr-x--- 2 batman 57 Jan 21 12:12 /home/batman` = Directory Exists
+   - `No such directory found` = Does not exist
+## Setting User Password
+- `sudo passwd joker` = sets a new password for joker
+- Output
+  - `new password : `
+  - `retype new password : `
